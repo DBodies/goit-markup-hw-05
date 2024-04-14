@@ -410,69 +410,88 @@
         <p class="subscribe">Subscribe</p>
         <form class="subs-form">
           <label class="subs-form-label">
-            <input type="email" class="footer-input-email" placeholder="E-mail">
+            <input type="email" class="footer-input-email" placeholder="E-mail" name="Email">
           </label>
-          <button type="submit" class="footer-button-subs">Subscribe</button>
-          <svg class="telega-icons" width="24" height="24">
-            <use href="./images/icons.svg#icon-Frame-3"></use>
-          </svg>
+          <button type="submit" class="footer-button-subs">Subscribe
+            <svg class="telega-icons" width="24" height="24">
+              <use href="./images/icons.svg#icon-Frame-3"></use>
+            </svg></button>
+
         </form>
 
       </div>
     </div>
   </footer>
   <!-- Modal -->
-  <div class="backdrop is-open">
+  <div class="modal-overlay is-open">
+
     <div class="modal">
-      <button type="button" class="modal-button">
-        <svg class="images-icon-x" width="16" height="16">
+      <button class="modal-close-btn" type="button">
+        <svg class="modal-icon-close" width="8" height="8">
           <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
-        </svg></button>
+        </svg>
+      </button>
       <p class="modal-title">Leave your contacts and we will call you back</p>
-      <form class="form-modal">
-        <label for="textik" class="label-modal">Name</label>
-        <div class="modal-input-wrap">
-          <input type="text" class="input-modal border" name="Name" id="textik">
-          <svg class="modal-icons-text" width="18" height="24">
-            <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
-          </svg>
+
+      <form class="modal-form">
+
+        <div class="user-blank">
+
+          <div class="modal-filed">
+            <label for="name" class="modal-label">Name</label>
+            <div class="modal-input-wrap">
+              <input type="text" class="modal-input" name="name" id="name">
+              <svg class="modal-filed-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="modal-filed">
+            <label for="phone" class="modal-label">Phone</label>
+            <div class="modal-input-wrap">
+              <input type="tel" class="modal-input" name="phone" id="phone">
+              <svg class="modal-filed-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="modal-filed">
+            <label for="email" class="modal-label">Email</label>
+            <div class="modal-input-wrap">
+              <input type="email" class="modal-input" name="email" id="email">
+              <svg class="modal-filed-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="modal-filed">
+            <label class="modal-label" for="user-comment">Comment</label>
+            <textarea class="modal-text" name="user-comment" id="user-comment" placeholder="Text input"></textarea>
+          </div>
+
         </div>
-      </form>
-      <div class="modal-field">
-        <form class="form-modal">
-          <label for="phone" class="label-modal">Phone</label>
-          <div class="modal-input-wrap">
-            <input type="tel" class="input-modal" name="Phone" id="phone">
-            <svg class="modal-icons-text-t" width="18" height="24">
-              <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
-            </svg>
-          </div>
-        </form>
 
-        <form class="form-modal">
-          <label for="emailio" class="label-modal">Email</label>
-          <div class="modal-input-wrap">
-            <input type="email" class="input-modal" name="email" id="emailio">
-            <svg class="modal-icons-text-t" width="18" height="24">
-              <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
-            </svg>
-          </div>
-        </form>
-        <label for="commetntio" class="label-modal">Comment</label>
-        <textarea name="user-comment" id="user-comment" placeholder="Text input" class="areatext"></textarea>
+        <div class="modal-filed">
+          <input type="checkbox" name="policy" id="policy" class="modal-check we-disable" value="true">
+          <label for="policy" class="check-text">
+            <span class="check-icon">
+              <svg class="check-icon-wrap" width="10" height="8">
+                <use href="./images/icons.svg#icon-Vector"></use>
+              </svg>
+            </span>I accept the terms and conditions of the<a href class="policy-link"> Privacy Policy</a>
+          </label>
 
+        </div>
 
-        <input type="checkbox" name="policy" id="policy" class="checkbox-input we-disable" value="true">
-        <label for="policy" class="check-text ">
-          <span>
-            <svg class="icons-check" width="10" height=8>
-              <use href="./images/icons.svg#icon-Vector"></use>
-            </svg>
-          </span>
-          I accept the terms and conditions of the <a class="Privacy-Policy">Privacy Policy</a></label>
         <button type="submit" class="modal-send-btn">Send</button>
-      </div>
 
+      </form>
+    </div>
+
+  </div>
 
 
 </body>
