@@ -240,7 +240,7 @@ background-color: #31d0aa;
   letter-spacing: 0.02em;
   color: #434455;
 }
-.we-disable {
+.visually-hidden {
   position: absolute;
     width: 1px;
     height: 1px;
