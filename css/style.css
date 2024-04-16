@@ -240,7 +240,7 @@ background-color: #31d0aa;
   letter-spacing: 0.02em;
   color: #434455;
 }
-.visually-hidden {
+.we-disable {
   position: absolute;
     width: 1px;
     height: 1px;
@@ -718,12 +718,15 @@ gap: 24px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-title {
-  font: 500 16px / 150% "Roboto";
-    letter-spacing: 0.02em;
-    text-align: center;
-    color: #2e2f42;
-    padding-top: 72px;
-    margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+  width: 360px;
+  margin-bottom: 16px;
 }
 .modal-filed {
   margin-bottom: 8px;
