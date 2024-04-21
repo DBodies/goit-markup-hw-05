@@ -602,7 +602,6 @@ gap: 24px;
     gap: 16px;
     border-radius: 4px;
       padding: 8px 24px;
-      width: 165px;
       height: 40px;
       background: #4d5ae5;
       font-family: "Roboto", sans-serif;
@@ -614,6 +613,9 @@ gap: 24px;
         color: #fff;
         outline: none;
           transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            margin-left: 16px;
+              min-width: 165px;
+              border: none;
 }
 .footer-input-email {
   border: 1px solid #fff;
@@ -645,12 +647,8 @@ gap: 24px;
 .footer-button-subs:hover {
   background-color: #404bbf;
 }
-.footer-button-subs{
-  margin-left: 16px;
-  min-width: 165px;
-  border: none;
-}
 .telega-icons {
+  margin-left: 16px;
 }
 /* Modal */
 .modal-overlay {
