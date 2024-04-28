@@ -599,7 +599,6 @@ gap: 24px;
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    gap: 16px;
     border-radius: 4px;
       padding: 8px 24px;
       height: 40px;
@@ -613,7 +612,6 @@ gap: 24px;
         color: #fff;
         outline: none;
           transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-            margin-left: 16px;
               min-width: 165px;
               border: none;
 }
@@ -623,7 +621,6 @@ gap: 24px;
     width: 264px;
     height: 40px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-    margin-right: 24px;
     background-color: transparent;
     font-weight: 400;
       font-size: 12px;
@@ -872,4 +869,10 @@ cursor: pointer;
   color: #fff;
   margin: 0 auto;
   margin-top: 24px;
+}
+.modal-send-btn:hover {
+  background-color: #404BBF;
+}
+.modal-send-btn:focus {
+  background-color: #404BBF;
 }
