@@ -551,15 +551,22 @@ width: 264px;
 height: 40px;
 box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 background-color: transparent;
+font-size: 12px;
+line-height: 2;
+letter-spacing: 0.04em;
+color: #FFFFFF;
 }
 .footer-input::placeholder {
-  color: #FFFF;
+color: #FFFFFF;
 }
 .footer-btn {
+  font-weight: 500;
+  line-height: 1.5;
+letter-spacing: 0.04em;
   border:none;
   border-radius: 4px;
 padding: 8px 24px;
-width: 165px;
+min-width: 165px;
 height: 40px;
 color: #FFFFFF;
 display: flex;
@@ -593,29 +600,30 @@ color: #FFFFFF;
   display: flex;
   justify-content: center;
   align-items: center;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 250ms ease-in-out;
-}
-.modal-overlay.is-open {
+  opacity: 1;
+  /* pointer-events: none; */
+  background-color: rgba(46, 47, 66, 0.4);
+ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1); }
+/* .modal-overlay.is-open {
     pointer-events: none;
   opacity: 1;
-}
+} */
 .modal {
-position: absolute;
+top: 50%;
+left: 50%;
 width: 408px;
-height: 584px;
+min-height: 584px;
 border-radius: 4px;
 box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14),0px 1px 3px 0px rgba(0, 0, 0, 0.12),0px 2px 1px 0px rgba(0, 0, 0, 0.2);
 background: rgb(252, 252, 252);
 display: flex;
 flex-direction: column;
-padding: 32px 24px 32px 24px;
+padding: 72px 24px 24px 24px;
+ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 .modal-btn-closer {
   cursor: pointer;
-    top: 24px;
-    right: 24px;
     line-height: 0;
     padding: 0;
     border: none;
@@ -627,19 +635,41 @@ padding: 32px 24px 32px 24px;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: absolute;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
       border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      margin-left: 330px;
+}
+.svg-close-btn {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.svg-close-btn:hover {
+fill: #ffffff
+}
+.svg-close-btn:focus {
+  fill: #ffffff
+}
+.modal-btn-closer:hover {
+ background-color: #404bbf;
+ fill: #ffffff;
+ border: none;
+}
+.modal-btn-closer:focus {
+   background-color: #404bbf;
+   fill: #ffffff;
+   border: none;
 }
 .modal-text {
 color: rgb(46, 47, 66);
 font-size: 16px;
 font-weight: 500;
 line-height: 24px;
-letter-spacing: 2%;
+letter-spacing: 0.02em;
 text-align: center;
 margin-top: 24px;
 margin-bottom: 16px;
+}
+.modal-field {
+  margin-bottom: 8px;
 }
 .label-sign {
 color: rgb(142, 143, 153);
