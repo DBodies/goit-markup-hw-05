@@ -643,12 +643,12 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .modal-btn-closer:hover {
   border:none;
   background-color: #404bbf;
- fill: #ffffff;
+  fill: #ffffff;
 }
 .modal-btn-closer:focus {
-   background-color: #404bbf;
-   fill: #ffffff;
-   border: none;
+  background-color: #404bbf;
+  fill: #ffffff;
+  border: none;
 }
 .svg-close-btn:focus {
   fill: #ffffff
